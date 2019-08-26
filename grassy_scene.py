@@ -11,6 +11,7 @@ class GrassyApp(ShowBase):
 
         # Load the environment model.
         self.scene = self.loader.loadModel("models/environment")
+
         # Reparent the model to renderer.
         self.scene.reparent_to(self.render)
         # Apply scale and position transforms on the model.
